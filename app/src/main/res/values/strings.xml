@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android_VK</string>
+    <integer name="com_vk_sdk_AppId">5226988</integer>
+    <string name="action_settings">Settings</string>
+    <string name="first_last_name">first_last_name</string>
+    <string name="last_seen">last_seen</string>
+    <string name="user_id">user_id</string>
+</resources>

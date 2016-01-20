@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#abcdef"
+        android:id="@+id/date"
+        tools:text="date"
+        android:textSize="16sp"
+        android:textColor="#2e3033"
+        android:fontFamily="Roboto-Regular"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <kilfat.android_vk.util.VerticalLinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/vertical_layout"
+        android:layout_height="wrap_content"
+        app:reverse="false"
+        android:layout_alignTop="@+id/date"
+        android:layout_toRightOf="@+id/date"
+        android:layout_toEndOf="@+id/date"
+        >
+
+    <TextView
+        android:background="#abcdef"
+        android:id="@+id/message"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        tools:text="some message"
+        android:textSize="16sp"
+        android:textColor="#2e3033"
+        android:fontFamily="Roboto-Regular"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/date"
+        android:layout_toEndOf="@+id/date"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerViewRecursion"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/message"
+        />
+        <ImageView
+            android:id="@+id/attachPhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/vertical_layout"
+            android:layout_alignStart="@+id/vertical_layout" />
+
+    </kilfat.android_vk.util.VerticalLinearLayout>
+
+
+</RelativeLayout>
